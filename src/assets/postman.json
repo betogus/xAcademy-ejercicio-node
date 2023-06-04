@@ -1,0 +1,356 @@
+{
+    "info": {
+        "name": "xacademy",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "library/create",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/library/create",
+                    "path": [
+                        "library",
+                        "create"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkbWluIiwiaWF0IjoxNjg1ODk1Mjc5fQ.TzFPSXmGj4gUrcSJ5rTFCo0WWJ4_NSVw8bNufkd221U"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"name\": \"QUADE\",\n    \"location\": \"Av. Libertador 1460\",\n    \"phone\": 3514563344\n}"
+                }
+            }
+        },
+        {
+            "name": "library/addBook",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/library/addBook/2",
+                    "path": [
+                        "library",
+                        "addBook",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkbWluIiwiaWF0IjoxNjg1ODk4MTY3fQ.58xw0lClOiwqWECrxbxOtTP5W9WlTWMcEXQ_70a0_N4"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"isbn\": 122,\n    \"title\": \"Harry Potter y la Orden del Fénix\",\n    \"author\": \"J. K. Rowling\",\n    \"year\": 2000\n}"
+                }
+            }
+        },
+        {
+            "name": "book/delete",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/book/delete/5",
+                    "path": [
+                        "book",
+                        "delete",
+                        "5"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkbWluIiwiaWF0IjoxNjg1ODk4MTY3fQ.58xw0lClOiwqWECrxbxOtTP5W9WlTWMcEXQ_70a0_N4"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "book/edit",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/book/edit/6",
+                    "path": [
+                        "book",
+                        "edit",
+                        "6"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "secret",
+                        "value": "claveSecreta"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkbWluIiwiaWF0IjoxNjg1ODk4MTY3fQ.58xw0lClOiwqWECrxbxOtTP5W9WlTWMcEXQ_70a0_N4"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"isbn\": 108,\n    \"title\": \"Harry Potter y la Cámara Secreta\",\n    \"author\": \"J. K. Rowling\",\n    \"year\": 2000,\n    \"erase\": false,\n    \"LibraryId\": 2\n}"
+                }
+            }
+        },
+        {
+            "name": "library/delete",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/library/delete/3",
+                    "path": [
+                        "library",
+                        "delete",
+                        "3"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkbWluIiwiaWF0IjoxNjg1ODk4MTY3fQ.58xw0lClOiwqWECrxbxOtTP5W9WlTWMcEXQ_70a0_N4"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "library/edit",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/library/edit/2",
+                    "path": [
+                        "library",
+                        "edit",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkbWluIiwiaWF0IjoxNjg1ODk1Mjc5fQ.TzFPSXmGj4gUrcSJ5rTFCo0WWJ4_NSVw8bNufkd221U"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"name\": \"El Ateneo\",\n    \"location\": \"Av. Libertador 1460\",\n    \"phone\": 3514563344\n}"
+                }
+            }
+        },
+        {
+            "name": "book/getById",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/book/getById/6",
+                    "path": [
+                        "book",
+                        "getById",
+                        "6"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "library/getById",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/library/getById/2",
+                    "path": [
+                        "library",
+                        "getById",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthcG9ndXMiLCJpYXQiOjE2ODMwNDA3ODUsImV4cCI6MTY4MzEyNzE4NX0.HuuPNR1pQ_ahexfztRDTK55ATjzB2IgkkRvyLwMoonA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "book/create",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/book/create",
+                    "path": [
+                        "book",
+                        "create"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkbWluIiwiaWF0IjoxNjg1ODk1Mjc5fQ.TzFPSXmGj4gUrcSJ5rTFCo0WWJ4_NSVw8bNufkd221U"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"isbn\": 133,\n    \"title\": \"Harry Potter y el Príncipe Mestizo\",\n    \"author\": \"J. K. Rowling\",\n    \"year\": 2000,\n    \"LibraryId\": 2\n}"
+                }
+            }
+        },
+        {
+            "name": "book/getAll",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/book/getAll",
+                    "path": [
+                        "book",
+                        "getAll"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthcG9ndXMiLCJpYXQiOjE2ODMwNDA3ODUsImV4cCI6MTY4MzEyNzE4NX0.HuuPNR1pQ_ahexfztRDTK55ATjzB2IgkkRvyLwMoonA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "library/getAll",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/library/getAll",
+                    "path": [
+                        "library",
+                        "getAll"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthcG9ndXMiLCJpYXQiOjE2ODMwNDA3ODUsImV4cCI6MTY4MzEyNzE4NX0.HuuPNR1pQ_ahexfztRDTK55ATjzB2IgkkRvyLwMoonA"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "user/login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/user/login",
+                    "path": [
+                        "user",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"admin\",\n  \"password\": \"admin\"\n}"
+                }
+            }
+        }
+    ]
+}
